@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration System</h1>
+      <p>Register student details, edit and delete</p>
+    </header>
+
+    <section class="form-section">
+      <form id="studentForm">
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Student Name"
+          required
+        />
+        <input type="text" id="studentID" placeholder="Student ID" required />
+        <input type="email" id="emailID" placeholder="Email ID" required />
+        <input type="text" id="contactNo" placeholder="Contact No." required />
+        <button type="submit">Register Student</button>
+      </form>
+    </section>
+
+    <section class="display-section">
+      <h2>Registered Students</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+      </table>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
